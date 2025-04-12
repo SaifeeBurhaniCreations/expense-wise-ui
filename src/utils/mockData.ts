@@ -84,7 +84,7 @@ export const subscriptions = [
 export const recentTransactions = [
   {
     id: 1,
-    type: "expense",
+    type: "expense" as "expense",
     category: "Food",
     vendor: "Grocery Store",
     amount: 78.29,
@@ -92,7 +92,7 @@ export const recentTransactions = [
   },
   {
     id: 2,
-    type: "expense",
+    type: "expense" as "expense",
     category: "Shopping",
     vendor: "Online Store",
     amount: 39.99,
@@ -100,7 +100,7 @@ export const recentTransactions = [
   },
   {
     id: 3,
-    type: "income",
+    type: "income" as "income",
     category: "Salary",
     vendor: "Employer Inc.",
     amount: 2800.00,
@@ -108,7 +108,7 @@ export const recentTransactions = [
   },
   {
     id: 4,
-    type: "expense",
+    type: "expense" as "expense",
     category: "Transportation",
     vendor: "Gas Station",
     amount: 45.50,
@@ -116,7 +116,7 @@ export const recentTransactions = [
   },
   {
     id: 5,
-    type: "expense",
+    type: "expense" as "expense",
     category: "Bills",
     vendor: "Electric Company",
     amount: 132.17,
