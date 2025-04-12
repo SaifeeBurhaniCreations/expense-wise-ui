@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Finance app specific colors
+				finance: {
+					income: '#0EA5E9',  // Light teal for positive values
+					expense: '#F43F5E', // Coral for negative values
+					neutral: '#64748B', // Slate for neutral values
+					low: '#10B981',     // Green for low risk/good
+					medium: '#F59E0B',  // Amber for medium risk/warning
+					high: '#EF4444',    // Red for high risk/danger
 				}
 			},
 			borderRadius: {
@@ -70,25 +80,27 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'slide-in': {
+					'0%': { transform: 'translateX(-10px)', opacity: '0' },
+					'100%': { transform: 'translateX(0)', opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out',
+				'slide-in': 'slide-in 0.3s ease-out'
 			}
 		}
 	},
