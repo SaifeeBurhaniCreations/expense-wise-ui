@@ -75,4 +75,27 @@
   .expense-item {
     @apply flex justify-between items-center p-3 border-b last:border-0;
   }
+
+  /* New styles for the additional pages */
+  .glow-effect {
+    @apply relative;
+  }
+
+  .glow-effect::after {
+    content: '';
+    @apply absolute inset-0 rounded-lg opacity-0 transition-opacity duration-300 bg-primary/20 blur-xl -z-10;
+  }
+
+  .glow-effect:hover::after {
+    @apply opacity-100;
+  }
+  
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-sm border border-white/20 shadow-sm;
+  }
+  
+  .feature-card {
+    @apply p-6 rounded-xl transition-all hover:shadow-md hover:-translate-y-1 bg-white;
+  }
 }
+
