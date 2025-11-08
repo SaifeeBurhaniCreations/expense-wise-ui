@@ -8,7 +8,7 @@ import {
   BarChart,
   PieChart,
   LineChart,
-  ArrowTrendingUp,
+  TrendingUp,
   LightbulbIcon,
   Sparkles,
   ArrowRight,
@@ -50,7 +50,7 @@ const Insights: React.FC = () => {
             <Card>
               <CardHeader className="pb-2">
                 <div className="flex items-center">
-                  <ArrowTrendingUp className="h-5 w-5 text-blue-500 mr-2" />
+                  <TrendingUp className="h-5 w-5 text-blue-500 mr-2" />
                   <CardTitle className="text-xl">Monthly Financial Trends</CardTitle>
                 </div>
               </CardHeader>

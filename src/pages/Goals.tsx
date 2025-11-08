@@ -23,7 +23,7 @@ import {
   Home,
   Plane,
   Briefcase,
-  Graduation,
+  GraduationCap,
   Calendar,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
